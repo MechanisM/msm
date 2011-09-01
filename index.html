@@ -49,11 +49,11 @@ $(window).load(function(){$('#preloading').fadeOut();$('body').fadeIn(1000);});
 <a href="http://mechanism.name/" id="logo">{Title}</a>
 <!--canvas id="wave"></canvas-->
 <div id="wrapper"><!-- nav -->{block:PermalinkPagination}{block:NextPost}
-<div class="nav ui-corner-left"><a href="{NextPost}">&lArr;</a></div>{/block:NextPost}
+<div class="nav"><a class="ui-corner-left" href="{NextPost}">&lArr;</a></div>{/block:NextPost}
 <div class="nav mid"><a href="/">III</a></div>{block:PreviousPost}
-<div class="nav ui-corner-right"><a href="{PreviousPost}">&rArr;</a></div>{/block:PreviousPost}
+<div class="nav"><a class="ui-corner-right" href="{PreviousPost}">&rArr;</a></div>{/block:PreviousPost}
 {/block:PermalinkPagination}{block:Pagination}{block:PreviousPage}
-<div class="nav ui-corner-left"><a href="{PreviousPage}">&lArr;</a></div>{/block:PreviousPage}{/block:Pagination}
+<div class="nav"><a class="ui-corner-left" href="{PreviousPage}">&lArr;</a></div>{/block:PreviousPage}{/block:Pagination}
 <!-- posts -->
 {block:Posts}
 <article class="post{block:IndexPage} ui-corner-bottom index autoColor{block:Text} txt{/block:Text}{block:Link} txt{/block:Link}{block:Quote} txt{/block:Quote}{block:Chat} txt{/block:Chat}{block:Photo} bar{/block:Photo}{block:Photoset} bar{/block:Photoset}{block:Video} bar{/block:Video} {block:Audio} bar{/block:Audio}{/block:IndexPage}{block:PermalinkPage} perma{/block:PermalinkPage}">
@@ -140,13 +140,13 @@ $(window).load(function(){$('#preloading').fadeOut();$('body').fadeIn(1000);});
 <!-- AddThis Button END -->
 </ul>
 {/block:PermalinkPage}
-</article><!--/post-->    			
+</article><!--/post-->        		
 {/block:Posts}
 
 
 <!-- nav -->
 {block:Pagination}{block:NextPage}
-<div class="nav ui-corner-right"><a href="{NextPage}">&rArr;</a></div>
+<div class="nav"><a class="ui-corner-right" href="{NextPage}">&rArr;</a></div>
 {/block:NextPage}{/block:Pagination}
 
 </div><!--/wrapper-->
@@ -162,15 +162,9 @@ $(window).load(function(){$('#preloading').fadeOut();$('body').fadeIn(1000);});
 </nav>
 </footer><!--/footer-->
 <script>
-(function(w, c) {
-(w[c] = w[c] || []).push(function() {
-try {
-w.yaCounter2149720 = new Ya.Metrika(2149720);
-yaCounter2149720.clickmap(true);
-yaCounter2149720.trackLinks(true);
-} catch(e) {}
-});
-})(window, 'yandex_metrika_callbacks');
+(function(w, c){(w[c] = w[c] || []).push(function(){try{
+w.yaCounter2149720 = new Ya.Metrika(2149720);yaCounter2149720.clickmap(true);yaCounter2149720.trackLinks(true);
+}catch(e){}});})(window, 'yandex_metrika_callbacks');
 </script>
 <script src="//mc.yandex.ru/metrika/watch.js" defer="defer"></script>
 <noscript><img src="//mc.yandex.ru/watch/2149720" alt="" class="hide" /></noscript>
