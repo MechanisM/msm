@@ -1,9 +1,9 @@
-*,html,body{margin:0;padding:0;outline:none;border:none;list-style:none;}
-html{background:#000 url(../img/bg-medium.png) top left fixed repeat;}
+*{margin:0;padding:0;outline:none;border:none;list-style:none;}
 body,.index .count,.nr{color:#fff}
-a{color:#929292;text-decoration:none;opacity:.8;}a:hover{opacity:1;text-shadow:1px #000;}a:active{position:relative;top:1px;opacity:1}
+a{color:#929292;text-decoration:none;opacity:.8;}
+a:hover{opacity:1;text-shadow:1px #000;}
+a:active{position:relative;top:1px;opacity:1}
 body{background:#000 url(../img/bg-medium.png) top left fixed repeat;font:62.5%/1 "Lucida Sans Unicode", "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;}
-section{padding:80 0 80px 80px}
 iframe#tumblr_controls{position:fixed !important;top:0;right:0;}
 #preloading{
 background:#000 url(../img/bg-medium.png) top left fixed repeat;height:100%;left:0;overflow:hidden;position:fixed;top:0;width:100%;z-index:2147483646;
@@ -229,9 +229,6 @@ sup,sub{vertical-align:baseline}
 .is20{box-shadow:inset 0px 0px 20px rgba(0,0,0,0.8);-khtml-box-shadow:inset 0px 0px 20px rgba(0,0,0,0.8);
 -moz-box-shadow:inset 0px 0px 20px rgba(0,0,0,0.8);-webkit-box-shadow:inset 0px 0px 20px rgba(0,0,0,0.8);
 }
-.b4{border-radius:4px;-khtml-border-radius:4px;-moz-border-radius:4px;-webkit-border-radius:4px;}
-.b6{border-radius:6px;-khtml-border-radius:6px;-moz-border-radius:6px;-webkit-border-radius:6px;}
-.b10{border-radius:10px;-khtml-border-radius:10px;-moz-border-radius:10px;-webkit-border-radius:10px;}
 .bwb{padding:10px;
 background:#ddd;background:-webkit-gradient(linear,left top,left bottom,from(#ededed),to(#c4c4c4));
 background:-moz-linear-gradient(top,#ededed,#c4c4c4);color:#000;text-shadow:1px #000;
