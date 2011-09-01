@@ -13,10 +13,7 @@
 <!--script src="http://mechanism.github.com/msm/js/wave.js"></script-->
 <script src="http://mechanism.github.com/msm/js/facebox.js"></script>
 <script src="http://mechanism.github.com/msm/js/MechanisM.js"></script>
-<script src="http://mechanism.github.com/msm/js/lettering.js"></script>{block:PermalinkPage}
-<script src="http://userapi.com/js/api/openapi.js?20"></script>
-<script>VK.init({apiId:2132191,onlyWidgets:true});VK.Widgets.Comments("vk_comments",{limit:5,width:"400",attach:"*"});</script>
-{/block:PermalinkPage}
+<script src="http://mechanism.github.com/msm/js/lettering.js"></script>
 <script>
 var count = 0;
 function rotate() {
@@ -128,16 +125,7 @@ $(window).load(function(){$('#preloading').fadeOut();$('body').fadeIn(1000);});
 {block:HasTags}<li class="tags">{block:Tags}<a href="{TagURL}">{Tag}</a>{/block:Tags}</li>{/block:HasTags}
 {block:HighRes}<li><a href="{PhotoURL-HighRes}">&dArr; {lang:High-Res}</a></li>{/block:HighRes}
 <li><a class="dsq dsq-comment-count" href="#disqus_thread" rel="facebox">Comments</a></li>
-<li><a href="#vk_comments" rel="facebox">Comments</a></li>
-<!-- AddThis Button BEGIN -->
-<li class="addthis_toolbox addthis_default_style" addthis:title="{Title}" addthis:url="{Permalink}">
-<a href="http://www.addthis.com/bookmark.php" 
-        style="text-decoration:none;" 
-        class="addthis_button">Bookmark or Share</a>
-</li>
-<script>var addthis_config = {"data_track_clickback":true};</script>
-<script src="http://s7.addthis.com/js/250/addthis_widget.js#username=mechanism"></script>
-<!-- AddThis Button END -->
+<li class="addthis_toolbox addthis_default_style" addthis:title="{Title}" addthis:url="{Permalink}"><a href="http://www.addthis.com/bookmark.php" class="addthis_button">Bookmark or Share</a></li>
 </ul>
 {/block:PermalinkPage}
 </article><!--/post-->        		
@@ -178,8 +166,8 @@ var disqus_title ="{block:PostTitle}{PostTitle}{/block:PostTitle}";
 var dsq = document.createElement('script'); dsq.async = true;
 dsq.src = 'http://mechanism.disqus.com/embed.js';
 (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-})();
+})();var addthis_config = {"data_track_clickback":true};
 </script>
-<div id="vk_comments" class="hide"></div>
+<script src="http://s7.addthis.com/js/250/addthis_widget.js#username=mechanism"></script>
 {/block:PermalinkPage}
 </body></html>
