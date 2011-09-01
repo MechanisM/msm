@@ -1,0 +1,194 @@
+<!DOCTYPE HTML><html xml:lang="en" lang="en"><head><meta charset="utf-8" />
+<meta name="google-site-verification" content="vanoMvnWcPOAbR4vIK9MS94V4K6cUJaHxH-A-YU07VU" />
+<meta name="bitly-verification" content="4cdd7f438da5"/>
+<link rel="openid2.provider" href="https://www.google.com/accounts/o8/ud?source=profiles" />
+<link rel="openid2.local_id" href="http://www.google.com/profiles/EugeneMechanisM" />
+<title>{Title}{block:PostSummary} - {PostSummary}{/block:PostSummary}</title>
+{block:Description}<meta name="description" content="{MetaDescription}" />{/block:Description}
+<link rel="shortcut icon" href="{Favicon}" />
+<link rel="alternate" type="application/rss+xml" href="{RSS}" />
+<link rel="stylesheet" href="css/style.css?v=0.2" />
+<script src="https://www.google.com/jsapi"></script>
+<script>google.load("jquery", "1.6.2");$(document).ready(function(){ $("#logo").lettering(); });</script>
+<!--script src="js/wave.js"></script-->
+<script src="js/facebox.js"></script>
+<script src="js/MechanisM.js"></script>
+<script src="js/lettering.js"></script>{block:PermalinkPage}
+<script src="http://userapi.com/js/api/openapi.js?20"></script>
+<script>VK.init({apiId: 2132191, onlyWidgets: true});</script>
+{/block:PermalinkPage}
+<script>
+var count = 0;
+function rotate() {
+var spinner = document.getElementById('loader');
+spinner.style.MozTransform = 'scale(0.5) rotate('+count+'deg)';
+spinner.style.WebkitTransform = 'scale(0.5) rotate('+count+'deg)';
+if (count==360) { count = 0 }
+    count+=45;
+    window.setTimeout(rotate, 100);
+  }
+  window.setTimeout(rotate, 100);
+
+var _gaq = _gaq || [];_gaq.push(['_setAccount', 'UA-20676011-2']);_gaq.push(['_trackPageLoadTime']);
+//_gaq.push(['_trackEvent', 'NoBounce', history.back()]);
+_gaq.push(['_trackPageview']);
+(function(){
+var ga = document.createElement('script');ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+$(window).load(function(){$('#preloading').fadeOut();$('.post').fadeIn(1000);});
+</script>
+</head>
+<body><div id="spectrum"></div>
+<div id="preloading"><div id="loader">
+<div class="bar1"></div><div class="bar2"></div><div class="bar3"></div>
+<div class="bar4"></div><div class="bar5"></div><div class="bar6"></div>
+<div class="bar7"></div><div class="bar8"></div>
+</div></div>
+<a href="http://mechanism.name/" id="logo">{Title}</a>
+<!--canvas id="wave"></canvas-->
+<div id="wrapper"><!-- nav -->{block:PermalinkPagination}{block:NextPost}
+<div class="nav ui-corner-left"><a href="{NextPost}">&lArr;</a></div>{/block:NextPost}
+<div class="nav mid"><a href="/">III</a></div>{block:PreviousPost}
+<div class="nav ui-corner-right"><a href="{PreviousPost}">&rArr;</a></div>{/block:PreviousPost}
+{/block:PermalinkPagination}{block:Pagination}{block:PreviousPage}
+<div class="nav ui-corner-left"><a href="{PreviousPage}">&lArr;</a></div>{/block:PreviousPage}{/block:Pagination}
+<!-- posts -->
+{block:Posts}
+<article class="post{block:IndexPage} ui-corner-bottom index autoColor{block:Text} txt{/block:Text}{block:Link} txt{/block:Link}{block:Quote} txt{/block:Quote}{block:Chat} txt{/block:Chat}{block:Photo} bar{/block:Photo}{block:Photoset} bar{/block:Photoset}{block:Video} bar{/block:Video} {block:Audio} bar{/block:Audio}{/block:IndexPage}{block:PermalinkPage} perma{/block:PermalinkPage}">
+{block:IndexPage}<a class="permalink" href="{Permalink}">&dArr;</a>{/block:IndexPage}
+{block:Text}<div class="text">                        
+{block:IndexPage}<span class="bodytxt">{block:Title}{Title}{/block:Title}</span>{/block:IndexPage}
+{block:Title}<h2 class="ui-corner-left">{Title}</h2>{/block:Title}
+<div class="copy">{Body}</div>
+</div>{/block:Text}
+{block:Photo}<div class="photo">
+{block:IndexPage}<img src="{PhotoURL-400}" alt="{PhotoAlt}" />{/block:IndexPage}
+{block:PermalinkPage}{LinkOpenTag}<img src="{PhotoURL-500}" alt="{PhotoAlt}" />{LinkCloseTag}
+{block:Caption}<div class="copy">{Caption}</div>{/block:Caption}{/block:PermalinkPage}
+</div>{/block:Photo}
+{block:Photoset}<div class="photoset">
+{block:IndexPage}<div class="overlay"></div><div class="thumb">{Photoset-400}</div>{/block:IndexPage}
+{block:PermalinkPage}<div class="media">{Photoset-500}</div>
+{block:Caption}<div class="copy">{Caption}</div>{/block:Caption}{/block:PermalinkPage}
+</div>{/block:Photoset}{block:Link}
+<div class="link">{block:IndexPage}
+<a href="{URL}" {Target}>{Name} &rarr;</a>{/block:IndexPage}{block:PermalinkPage}
+<a href="{URL}" {Target}><h2>{Name} &rarr;</h2></a>{block:Description}
+<div class="copy">{Description}</div>{/block:Description}{/block:PermalinkPage}</div>{/block:Link}
+{block:Quote}
+<div class="quote">{block:IndexPage}&ldquo;{PlaintextQuote}&rdquo;{/block:IndexPage}{block:PermalinkPage}<h2 class="ui-corner-left">&ldquo;{Quote}&rdquo;</h2>
+{block:Source}<div class="copy">{Source}</div>{/block:Source}{/block:PermalinkPage}
+</div>{/block:Quote}{block:Chat}
+<div class="chat">
+{block:IndexPage}{block:Title}{Title}{/block:Title}
+{block:Lines}{block:Label} {Label}{/block:Label} {Line}{/block:Lines}
+{/block:IndexPage}
+{block:PermalinkPage}{block:Title}<h2 class="ui-corner-left">{Title}</h2>{/block:Title}
+<ul class="copy">
+{block:Lines}
+<li class="{Alt} user_{UserNumber}">
+{block:Label}
+<span class="label">{Label}</span>
+{/block:Label}
+{Line}
+</li>
+{/block:Lines}
+</ul>{/block:PermalinkPage}
+</div>{/block:Chat}
+
+{block:Video}<div class="video">
+{block:IndexPage}<div class="overlay"></div><div class="thumb">{Video-250}</div>{/block:IndexPage}
+
+{block:PermalinkPage}<div class="media">{Video-500}</div>
+{block:Caption}<div class="copy">{Caption}</div>{/block:Caption}{/block:PermalinkPage}
+</div>{/block:Video}
+
+{block:Audio}<div class="audio">
+{block:IndexPage}<div class="overlay"></div>{block:AlbumArt}<img src="{AlbumArtURL}" alt="{TrackName}" width="240" height="240" />{/block:AlbumArt}{/block:IndexPage}
+
+{block:PermalinkPage}<div class="player">
+{block:AlbumArt}<img src="{AlbumArtURL}" alt="{TrackName}" />{/block:AlbumArt}
+{AudioPlayerGrey}
+</div>
+{block:Caption}<div class="copy">{Caption}</div>{/block:Caption}{/block:PermalinkPage}
+</div>{/block:Audio}
+
+
+{block:IndexPage}{block:NoteCount}
+<div class="count"><span class="heart">&hearts;</span> <span class="nr">{NoteCount}</span></div>
+{/block:NoteCount}{/block:IndexPage}
+
+{block:PermalinkPage}
+<ul class="meta">
+{block:Date}<li>{TimeAgo}</li>{/block:Date}
+{block:NoteCount}<li><span class="heart">&hearts;</span>{NoteCount}</li>{/block:NoteCount}
+{block:Audio}<li>{PlayCountWithLabel}</li>{/block:Audio}
+{block:HasTags}<li class="tags">{block:Tags}<a href="{TagURL}">{Tag}</a>{/block:Tags}</li>{/block:HasTags}
+{block:HighRes}<li><a href="{PhotoURL-HighRes}">&dArr; {lang:High-Res}</a></li>{/block:HighRes}
+<li><a class="dsq dsq-comment-count" href="#disqus_thread" rel="facebox">Comments</a></li>
+<li><a href="#vk_comments" rel="facebox">Comments</a></li>
+<!-- AddThis Button BEGIN -->
+<li class="addthis_toolbox addthis_default_style" addthis:title="{Title}" addthis:url="{Permalink}">
+<a href="http://www.addthis.com/bookmark.php" 
+        style="text-decoration:none;" 
+        class="addthis_button">Bookmark or Share</a>
+</li>
+<script>var addthis_config = {"data_track_clickback":true};</script>
+<script src="http://s7.addthis.com/js/250/addthis_widget.js#username=mechanism"></script>
+<!-- AddThis Button END -->
+</ul>
+{/block:PermalinkPage}
+</article><!--/post-->    			
+{/block:Posts}
+
+
+<!-- nav -->
+{block:Pagination}{block:NextPage}
+<div class="nav ui-corner-right"><a href="{NextPage}">&rArr;</a></div>
+{/block:NextPage}{/block:Pagination}
+
+</div><!--/wrapper-->
+
+
+<!-- footer -->    
+<footer id="footer" class="bwb s20">
+<div class="avatar"><img src="{PortraitURL-48}" alt="{Title}" /></div>
+<a href="/"><h1>{Title}</h1></a>
+<p id="description">{PlaintextDescription}</p>
+<nav id="metanav">
+{block:HasPages}{block:Pages}<a href="{URL}">{Label}</a>{/block:Pages}{/block:HasPages}<a href="/archive">{lang:Archive}</a><a href="/random">{lang:Random}</a><a href="/submit">{SubmitLabel}</a><a href="/ask">{AskLabel}</a>
+</nav>
+</footer><!--/footer-->
+<script>
+(function(w, c) {
+(w[c] = w[c] || []).push(function() {
+try {
+w.yaCounter2149720 = new Ya.Metrika(2149720);
+yaCounter2149720.clickmap(true);
+yaCounter2149720.trackLinks(true);
+} catch(e) {}
+});
+})(window, 'yandex_metrika_callbacks');
+</script>
+<script src="//mc.yandex.ru/metrika/watch.js" defer="defer"></script>
+<noscript><img src="//mc.yandex.ru/watch/2149720" alt="" class="hide" /></noscript>
+{block:PermalinkPage}
+<div id="disqus_thread" class="hide"></div>
+<script>
+var disqus_shortname = 'mechanism';
+var disqus_url = "{Permalink}";
+var disqus_title ="{block:PostTitle}{PostTitle}{/block:PostTitle}";
+(function() {
+var dsq = document.createElement('script'); dsq.async = true;
+dsq.src = 'http://mechanism.disqus.com/embed.js';
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<div id="vk_comments" class="hide"></div>
+<script>
+VK.Widgets.Comments("vk_comments", {limit: 5, width: "400", attach: "*"});
+</script>
+{/block:PermalinkPage}
+</body></html>
