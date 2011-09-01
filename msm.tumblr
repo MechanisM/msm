@@ -7,15 +7,15 @@
 {block:Description}<meta name="description" content="{MetaDescription}" />{/block:Description}
 <link rel="shortcut icon" href="{Favicon}" />
 <link rel="alternate" type="application/rss+xml" href="{RSS}" />
-<link rel="stylesheet" href="css/style.css?v=0.2" />
+<link rel="stylesheet" href="http://mechanism.github.com/msm/css/style.css?v=0.2" />
 <script src="https://www.google.com/jsapi"></script>
 <script>google.load("jquery", "1.6.2");$(document).ready(function(){ $("#logo").lettering(); });</script>
-<!--script src="js/wave.js"></script-->
-<script src="js/facebox.js"></script>
-<script src="js/MechanisM.js"></script>
-<script src="js/lettering.js"></script>{block:PermalinkPage}
+<!--script src="http://mechanism.github.com/msm/js/wave.js"></script-->
+<script src="http://mechanism.github.com/msm/js/facebox.js"></script>
+<script src="http://mechanism.github.com/msm/js/MechanisM.js"></script>
+<script src="http://mechanism.github.com/msm/js/lettering.js"></script>{block:PermalinkPage}
 <script src="http://userapi.com/js/api/openapi.js?20"></script>
-<script>VK.init({apiId: 2132191, onlyWidgets: true});</script>
+<script>VK.init({apiId:2132191,onlyWidgets:true});VK.Widgets.Comments("vk_comments",{limit:5,width:"400",attach:"*"});</script>
 {/block:PermalinkPage}
 <script>
 var count = 0;
@@ -37,7 +37,7 @@ var ga = document.createElement('script');ga.async = true;
 ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
 var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 })();
-$(window).load(function(){$('#preloading').fadeOut();$('.post').fadeIn(1000);});
+$(window).load(function(){$('#preloading').fadeOut();$('body').fadeIn(1000);});
 </script>
 </head>
 <body><div id="spectrum"></div>
@@ -49,11 +49,11 @@ $(window).load(function(){$('#preloading').fadeOut();$('.post').fadeIn(1000);});
 <a href="http://mechanism.name/" id="logo">{Title}</a>
 <!--canvas id="wave"></canvas-->
 <div id="wrapper"><!-- nav -->{block:PermalinkPagination}{block:NextPost}
-<div class="nav ui-corner-left"><a href="{NextPost}">&lArr;</a></div>{/block:NextPost}
+<div class="nav"><a class="ui-corner-left" href="{NextPost}">&lArr;</a></div>{/block:NextPost}
 <div class="nav mid"><a href="/">III</a></div>{block:PreviousPost}
-<div class="nav ui-corner-right"><a href="{PreviousPost}">&rArr;</a></div>{/block:PreviousPost}
+<div class="nav"><a class="ui-corner-right" href="{PreviousPost}">&rArr;</a></div>{/block:PreviousPost}
 {/block:PermalinkPagination}{block:Pagination}{block:PreviousPage}
-<div class="nav ui-corner-left"><a href="{PreviousPage}">&lArr;</a></div>{/block:PreviousPage}{/block:Pagination}
+<div class="nav"><a class="ui-corner-left" href="{PreviousPage}">&lArr;</a></div>{/block:PreviousPage}{/block:Pagination}
 <!-- posts -->
 {block:Posts}
 <article class="post{block:IndexPage} ui-corner-bottom index autoColor{block:Text} txt{/block:Text}{block:Link} txt{/block:Link}{block:Quote} txt{/block:Quote}{block:Chat} txt{/block:Chat}{block:Photo} bar{/block:Photo}{block:Photoset} bar{/block:Photoset}{block:Video} bar{/block:Video} {block:Audio} bar{/block:Audio}{/block:IndexPage}{block:PermalinkPage} perma{/block:PermalinkPage}">
@@ -140,13 +140,13 @@ $(window).load(function(){$('#preloading').fadeOut();$('.post').fadeIn(1000);});
 <!-- AddThis Button END -->
 </ul>
 {/block:PermalinkPage}
-</article><!--/post-->    			
+</article><!--/post-->        		
 {/block:Posts}
 
 
 <!-- nav -->
 {block:Pagination}{block:NextPage}
-<div class="nav ui-corner-right"><a href="{NextPage}">&rArr;</a></div>
+<div class="nav"><a class="ui-corner-right" href="{NextPage}">&rArr;</a></div>
 {/block:NextPage}{/block:Pagination}
 
 </div><!--/wrapper-->
@@ -162,15 +162,9 @@ $(window).load(function(){$('#preloading').fadeOut();$('.post').fadeIn(1000);});
 </nav>
 </footer><!--/footer-->
 <script>
-(function(w, c) {
-(w[c] = w[c] || []).push(function() {
-try {
-w.yaCounter2149720 = new Ya.Metrika(2149720);
-yaCounter2149720.clickmap(true);
-yaCounter2149720.trackLinks(true);
-} catch(e) {}
-});
-})(window, 'yandex_metrika_callbacks');
+(function(w, c){(w[c] = w[c] || []).push(function(){try{
+w.yaCounter2149720 = new Ya.Metrika(2149720);yaCounter2149720.clickmap(true);yaCounter2149720.trackLinks(true);
+}catch(e){}});})(window, 'yandex_metrika_callbacks');
 </script>
 <script src="//mc.yandex.ru/metrika/watch.js" defer="defer"></script>
 <noscript><img src="//mc.yandex.ru/watch/2149720" alt="" class="hide" /></noscript>
@@ -187,8 +181,5 @@ dsq.src = 'http://mechanism.disqus.com/embed.js';
 })();
 </script>
 <div id="vk_comments" class="hide"></div>
-<script>
-VK.Widgets.Comments("vk_comments", {limit: 5, width: "400", attach: "*"});
-</script>
 {/block:PermalinkPage}
 </body></html>
