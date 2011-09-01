@@ -8,21 +8,10 @@ iframe#tumblr_controls{position:fixed !important;top:0;right:0;}
 #preloading{
 background:#000 url(../img/bg-medium.png) top left fixed repeat;height:100%;left:0;overflow:hidden;position:fixed;top:0;width:100%;z-index:2147483646;
 }
-#preloading #loader div{
-width:20px;
-  height:20px;
-  background:#000;border-radius:40px;-moz-border-radius:40px;-webkit-border-radius:40px;
-  position:absolute;
-  left:40px;
-  top:40px;
-}
-#preloading #loader {
-left:50%;top:50%;margin-left:-50px;margin-top:-50px;position:absolute;
-  position:relative;
-  width:100px;
-  height:100px;
-  border-radius:100px;-moz-border-radius:100px;-webkit-border-radius:100px;
-  float:left;transform:scale(0.5);-moz-transform:scale(0.5);-webkit-transform:scale(0.5);
+#preloading #loader div{width:20px;height:20px;position:absolute;left:40px;top:40px;}
+#preloading #loader{left:50%;top:50%;margin-left:-50px;margin-top:-50px;position:absolute;
+position:relative;width:100px;height:100px;
+float:left;transform:scale(0.5);-moz-transform:scale(0.5);-webkit-transform:scale(0.5);
 
   -webkit-animation-name: rotateThis;
   -webkit-animation-duration:2s;
@@ -99,8 +88,8 @@ left:50%;top:50%;margin-left:-50px;margin-top:-50px;position:absolute;
 .ui-corner-all{-moz-border-radius:30px;-webkit-border-radius:30px;border-radius:30px;}
 
 #wrapper{padding:80 0 80px 80px}
-.post h2{font-size:3em;background-color:rgba(0,0,0,0.33);font-weight:700;padding:20px 20px 20px 30px}
-.nav a{width:80px;height:80px;background-color:rgba(0,0,0,.3);font-size:3em;float:left;line-height:2.7em;text-align:center}
+.post h2{font-size:3em;background:rgba(0,0,0,.3);font-weight:700;padding:20px 20px 20px 30px}
+.nav a{width:80px;height:80px;background:rgba(0,0,0,.3);font-size:3em;float:left;line-height:2.7em;text-align:center}
 .nav a:hover{}
 .index .photoset img,.index .video img{max-width:400px}
 .autoColor:nth-child(1),.autoColor:nth-child(11){color:rgba(232,101,0,0.6)}
