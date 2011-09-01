@@ -15,7 +15,7 @@
 <script src="http://mechanism.github.com/msm/js/MechanisM.js"></script>
 <script src="http://mechanism.github.com/msm/js/lettering.js"></script>{block:PermalinkPage}
 <script src="http://userapi.com/js/api/openapi.js?20"></script>
-<script>VK.init({apiId: 2132191, onlyWidgets: true});</script>
+<script>VK.init({apiId:2132191,onlyWidgets:true});VK.Widgets.Comments("vk_comments",{limit:5,width:"400",attach:"*"});</script>
 {/block:PermalinkPage}
 <script>
 var count = 0;
@@ -37,7 +37,7 @@ var ga = document.createElement('script');ga.async = true;
 ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
 var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 })();
-$(window).load(function(){$('#preloading').fadeOut();$('.post').fadeIn(1000);});
+$(window).load(function(){$('#preloading').fadeOut();$('body').fadeIn(1000);});
 </script>
 </head>
 <body><div id="spectrum"></div>
@@ -187,8 +187,5 @@ dsq.src = 'http://mechanism.disqus.com/embed.js';
 })();
 </script>
 <div id="vk_comments" class="hide"></div>
-<script>
-VK.Widgets.Comments("vk_comments", {limit: 5, width: "400", attach: "*"});
-</script>
 {/block:PermalinkPage}
 </body></html>
