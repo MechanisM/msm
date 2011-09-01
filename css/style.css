@@ -8,12 +8,22 @@ iframe#tumblr_controls{position:fixed !important;top:0;right:0;}
 #preloading{
 background:#000 url(../img/bg-medium.png) top left fixed repeat;height:100%;left:0;overflow:hidden;position:fixed;top:0;width:100%;z-index:2147483646;
 }
-#preloading #loader div{width:20px;height:20px;position:absolute;left:40px;top:40px;
-border-radius:40px;-moz-border-radius:40px;-webkit-border-radius:40px;}
-#preloading #loader{left:50%;top:50%;margin-left:-50px;margin-top:-50px;position:absolute;
-position:relative;width:100px;height:100px;
-float:left;transform:scale(0.5);-moz-transform:scale(0.5);-webkit-transform:scale(0.5);
-border-radius:100px;-moz-border-radius:100px;-webkit-border-radius:100px;
+#preloading #loader div{
+width:20px;
+  height:20px;
+  background:#000;border-radius:40px;-moz-border-radius:40px;-webkit-border-radius:40px;
+  position:absolute;
+  left:40px;
+  top:40px;
+}
+#preloading #loader {
+left:50%;top:50%;margin-left:-50px;margin-top:-50px;position:absolute;
+  position:relative;
+  width:100px;
+  height:100px;
+  border-radius:100px;-moz-border-radius:100px;-webkit-border-radius:100px;
+  float:left;transform:scale(0.5);-moz-transform:scale(0.5);-webkit-transform:scale(0.5);
+
   -webkit-animation-name: rotateThis;
   -webkit-animation-duration:2s;
   -webkit-animation-iteration-count:infinite;
