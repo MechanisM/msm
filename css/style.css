@@ -8,17 +8,17 @@ iframe#tumblr_controls{position:fixed !important;top:0;right:0;}
 #preloading{background:#000 url(../img/bg-medium.png) top left fixed repeat;height:100%;left:0;overflow:hidden;position:fixed;top:0;width:100%;z-index:2147483646;}
 #preloading #circularG{position:relative;width:64px;height:64px;top:50%;left:50%;margin-right:-32px;margin-top:-32px;}
 .circularG{position:absolute;background-color:#000000;width:15px;height:15px;-webkit-border-radius:10px;
--moz-border-radius:10px;-webkit-animation-name:bounce_circularG;-webkit-animation-duration:1.28s;
--webkit-animation-iteration-count:infinite;-webkit-animation-direction:linear;-moz-animation-name:bounce_circularG;
--moz-animation-duration:1.28s;-moz-animation-iteration-count:infinite;-moz-animation-direction:linear}
-#circularG_1{left:0;top:25px;-webkit-animation-delay:0.4800000000000001s;-moz-animation-delay:0.4800000000000001s}
-#circularG_2{left:7px;top:7px;-webkit-animation-delay:0.64s;-moz-animation-delay:0.64s}
-#circularG_3{top:0;left:25px;-webkit-animation-delay:0.8s;-moz-animation-delay:0.8s}
-#circularG_4{right:7px;top:7px;-webkit-animation-delay:0.9600000000000002s;-moz-animation-delay:0.9600000000000002s}
-#circularG_5{right:0;top:25px;-webkit-animation-delay:1.12s;-moz-animation-delay:1.12s}
-#circularG_6{right:7px;bottom:7px;-webkit-animation-delay:1.28s;-moz-animation-delay:1.28s}
-#circularG_7{left:25px;bottom:0;-webkit-animation-delay:1.44s;-moz-animation-delay:1.44s}
-#circularG_8{left:7px;bottom:7px;-webkit-animation-delay:1.6s;-moz-animation-delay:1.6s}
+-moz-border-radius:10px;-webkit-animation-name:bounce_circularG;-webkit-animation-duration:0.72s;-webkit-animation-iteration-count:infinite;
+-webkit-animation-direction:linear;-moz-animation-name:bounce_circularG;-moz-animation-duration:0.72s;
+-moz-animation-iteration-count:infinite;-moz-animation-direction:linear}
+#circularG_1{left:0;top:25px;-webkit-animation-delay:0.27s;-moz-animation-delay:0.27s}
+#circularG_2{left:7px;top:7px;-webkit-animation-delay:0.36s;-moz-animation-delay:0.36s}
+#circularG_3{top:0;left:25px;-webkit-animation-delay:0.45s;-moz-animation-delay:0.45s}
+#circularG_4{right:7px;top:7px;-webkit-animation-delay:0.54s;-moz-animation-delay:0.54s}
+#circularG_5{right:0;top:25px;-webkit-animation-delay:0.63s;-moz-animation-delay:0.63s}
+#circularG_6{right:7px;bottom:7px;-webkit-animation-delay:0.72s;-moz-animation-delay:0.72s}
+#circularG_7{left:25px;bottom:0;-webkit-animation-delay:0.8099999999999999s;-moz-animation-delay:0.8099999999999999s}
+#circularG_8{left:7px;bottom:7px;-webkit-animation-delay:0.9s;-moz-animation-delay:0.9s}
 @-webkit-keyframes bounce_circularG{0%{-webkit-transform:scale(1)}100%{-webkit-transform:scale(.3)}}
 @-moz-keyframes bounce_circularG{0%{-moz-transform:scale(1)}100%{-moz-transform:scale(.3)}}
 /* Corner radius */
