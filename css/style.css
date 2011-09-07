@@ -6,7 +6,7 @@ a:active{position:relative;top:1px;opacity:1}
 body{background:#000 url(../img/bg-medium.png) top left fixed repeat;font:62.5%/1 "Lucida Sans Unicode", "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;}
 iframe#tumblr_controls{position:fixed !important;top:0;right:0;}
 #preloading{background:#000 url(../img/bg-medium.png) top left fixed repeat;height:100%;left:0;overflow:hidden;position:fixed;top:0;width:100%;z-index:2147483646;}
-#preloading #circularG{position:relative;width:64px;height:64px}
+#preloading #circularG{position:relative;width:64px;height:64px;top:50%;left:50%;margin-right:-32px;margin-top:-32px;}
 .circularG{position:absolute;background-color:#000000;width:15px;height:15px;-webkit-border-radius:10px;
 -moz-border-radius:10px;-webkit-animation-name:bounce_circularG;-webkit-animation-duration:1.28s;
 -webkit-animation-iteration-count:infinite;-webkit-animation-direction:linear;-moz-animation-name:bounce_circularG;
